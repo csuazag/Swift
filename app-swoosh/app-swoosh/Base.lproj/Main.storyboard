@@ -120,9 +120,12 @@
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="55" id="fFl-QO-ZjC"/>
                                             <constraint firstAttribute="height" constant="55" id="mI8-tH-yzg"/>
                                         </constraints>
-                                        <state key="normal" title="GET STARTED">
+                                        <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="MWJ-eA-p5v" eventType="touchUpInside" id="cjf-ts-vot"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyd-pf-tx0" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="414" height="55"/>
@@ -132,9 +135,12 @@
                                             <constraint firstAttribute="height" constant="55" id="Vth-he-xAH"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XX8-PW-ooa"/>
                                         </constraints>
-                                        <state key="normal" title="GET STARTED">
+                                        <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="MWJ-eA-p5v" eventType="touchUpInside" id="Bcu-f3-vqq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgu-qt-5w6" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="414" height="55"/>
@@ -144,13 +150,16 @@
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="55" id="d8b-9m-u6B"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tfq-Jv-RAT"/>
                                         </constraints>
-                                        <state key="normal" title="GET STARTED">
+                                        <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="MWJ-eA-p5v" eventType="touchUpInside" id="CDO-cv-kFH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-uX-5Is" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-uX-5Is" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="787" width="414" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39747469190000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -158,7 +167,7 @@
                                     <constraint firstAttribute="height" constant="55" id="I3t-KW-QJg"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lSe-I7-Zah"/>
                                 </constraints>
-                                <state key="normal" title="GET STARTED">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -199,6 +208,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ccy-hL-Efw"/>
                     <connections>
+                        <outlet property="nextBtn" destination="ID1-uX-5Is" id="EVC-KR-hI6"/>
                         <segue destination="Pjy-TA-14r" kind="presentation" identifier="SkillVCSegue" modalPresentationStyle="fullScreen" id="MeD-2g-BPV"/>
                     </connections>
                 </viewController>
