@@ -161,6 +161,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="MWJ-eA-p5v" eventType="touchUpInside" id="7nl-vX-yLC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-MG-lTF">
                                 <rect key="frame" x="20" y="64" width="29" height="24"/>
@@ -195,6 +198,9 @@
                         <viewLayoutGuide key="safeArea" id="9GP-b0-S4S"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ccy-hL-Efw"/>
+                    <connections>
+                        <segue destination="Pjy-TA-14r" kind="presentation" identifier="SkillVCSegue" modalPresentationStyle="fullScreen" id="MeD-2g-BPV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUL-Nf-Xgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="8K7-9R-7yo" userLabel="Exit" sceneMemberID="exit"/>
@@ -284,6 +290,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o1s-Hm-9JV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ksy-yy-tIE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0e5-ca-nUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
